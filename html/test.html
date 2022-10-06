@@ -1,167 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Page With Youtube Video Background</title>
 <style>
-/* commit */
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-}
-
-.Shop {
-  position: absolute;
-  top: 19%;
-  left: 90%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(255, 0, 0, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.container img {
-  width: 100%;
-  height: auto;
-}
-.SideQuests {
-  position: absolute;
-  top: 20%;
-  left: 69%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(255, 0, 0, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.DailyQuest {
-  position: absolute;
-  top: 81%;
-  left: 42%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(255, 0, 0, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.Leaderboard {
-  position: absolute;
-  top: 78%;
-  left: 88%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(255, 0, 0, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.mainquest {
-    position: absolute;
-  top: 66%;
-  left: 36.5%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(255, 0, 0, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.grades {
-position: absolute;
-  top: 54%;
-  left: 22%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(241, 241, 241, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.stats {
-position: absolute;
-  top: 29%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(8, 229, 93, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-
-.container .btn {
-  position: absolute;
-  top: 12%;
-  left: 12%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(223, 3, 3, 0.741);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 1000px;
-  text-align: center;
-}
-
-.container .btn:hover {
-  background-color: black;
-}
+body{ margin:0px; background:#000; }
+#bg_container{ height:500px; overflow:hidden; }
+#bg{ width:100%; height:900px; }
+#content{ position:absolute; top:0px; padding:30px; color:#FFF; text-shadow:#000 2px 2px; }
 </style>
 </head>
 <body>
-<div class="container">
-  <img src="/Users/michael/Desktop/MuseWeb Back/Game and Sim Map.jpeg" alt="Game" width="1000" height="1000">
-  <button style="background:transparent; border:none; color:transparent;" onclick="document.location='https://forum.unity.com/threads/vr-and-non-vr-in-a-two-player-game.440904/'" class="btn">Exam Info</button>
-  <button onclick="document.location='https://www.youtube.com/watch?v=NUYvbT6vTPs'" style="background:transparent; border:none; color:transparent;" class="stats">Stats</button>
-  <button onclick="document.location='https://www.youtube.com/watch?v=f31mB6apCoE'" class="mainquest" style="background:transparent; border:none; color:transparent;" >Main Quest</button>
-  <button onclick="document.location='https://www.youtube.com/watch?v=5ngWIDkPP3o'" style="background:transparent; border:none; color:transparent;" class="grades">Grades</button>
-  <button onclick="document.location='https://www.youtube.com/watch?v=5ngWIDkPP3o'" class="DailyQuest" style="background:transparent; border:none; color:transparent;" >Daily Quests</button>
-  <button onclick="document.location='https://www.youtube.com/watch?v=NUYvbT6vTPs'" style="background:transparent; border:none; color:transparent;" class="Leaderboard">Leaderboard</button>
-  <button onclick="document.location='https://www.youtube.com/watch?v=EpX1_YJPGAY'" class="SideQuests" style="background:transparent; border:none; color:transparent;"  >SideQuests</button>
-  <button onclick="document.location='https://www.youtube.com/watch?v=EpX1_YJPGAY'" style="background:transparent; border:none; color:transparent;" class="Shop">Shopping</button>
+<div id="bg_container">
+  <iframe id="bg" src="//www.youtube.com/embed/LuD3_umIxgw?autoplay=1&amp;controls=0&amp;loop=1&amp;showinfo=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp;playlist=PLAYLIST_ID_HERE" frameborder="0"></iframe>
 </div>
-
+<div id="content">
+  <h1>Web page with HD looping video background</h1>
+  <h2>Using CSS the video is simply placed underneath our HTML content</h2>
+</div>
 </body>
 </html>
-
-<!-- style="background:transparent; border:none; color:transparent;" -->
